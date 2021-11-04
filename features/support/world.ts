@@ -1,6 +1,8 @@
-const { setWorldConstructor } = require("cucumber");
+const importCwd = require('import-cwd');
+const {setWorldConstructor} = importCwd("@cucumber/cucumber");
 
-class CustomWorld {
+export class CustomWorld {
+     variable;
     constructor() {
         this.variable = 0;
     }
