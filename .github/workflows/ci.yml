@@ -16,4 +16,4 @@ jobs:
      - name: npm Install
        run: npm install
      - name: run tests
-       run:  npx cucumber-js
+       run:  npm run test
